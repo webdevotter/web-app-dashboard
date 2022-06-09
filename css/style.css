@@ -15,8 +15,9 @@ img {
     border-radius: 50%;
     height: 80px;
 }
-header>img {
-    height: 40px;
+#avatar {
+    height: 45px;
+    margin-right: 10px;
 }
 .social-container {
     display: flex;
@@ -54,7 +55,14 @@ hr {
 #bell {
     filter: invert();
     margin-left: auto;
-     
+    /* border-right: 1px solid black; */
+        
+}
+#avatar-line {
+    border-left: 1px solid white;
+}
+sup {
+    font-size: .50em;
 }
 
 .change-color {
@@ -113,8 +121,13 @@ a:link {
 }
 
 svg {
-    height: 50px;
-    width: 50px;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    
+}
+#avatar {
+    margin-left: 10px;
 }
 
 
