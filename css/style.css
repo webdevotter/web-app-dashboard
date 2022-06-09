@@ -8,9 +8,9 @@ body {
     margin: 0px;
 }
 
-/* main {
-    padding: 15px;
-} */
+main {
+    margin: 15px;
+}
 img {
     border-radius: 50%;
     height: 80px;
@@ -18,20 +18,42 @@ img {
 header>img {
     height: 40px;
 }
+.social-container {
+    display: flex;
+    
+}
 
-.traffic,
-.daily,
-#social-stats,
-.new-members,
-.recent-activity,
-.message {
-
+.members-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-bottom: solid 2px #CCCCCC;
+    margin-bottom: 10px;
+}
+.members-container:last-child {
+    border-bottom: none;
+}
+.members-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.members-text > :first-child {
+    margin-bottom: 0;
+}
+.members-text > :last-child {
+    margin-top: 0;
+}
+
+hr {
+    border: solid 1px #ccc;
+    margin: 10px -15px;
 }
 
 #bell {
     filter: invert();
-    padding-right: 5px;
+    margin-left: auto;
      
 }
 
@@ -44,14 +66,12 @@ header>img {
 
 header {
     display: flex;
-    align-content: center;
     align-items: center;
     justify-content: space-evenly;
     background-color: #7477BF;
-    color: white;
+    color: white; 
+    padding: 0px 10px;  
 }
-
-
 .change-color {
     color: invert;
 }
@@ -86,7 +106,10 @@ a:link {
 .social-image {
     border-radius: 50%;
     background-color: #7477BF;
- 
+}
+#social-image svg {
+    width: 24px;
+    height: auto;
 }
 
 svg {
@@ -104,10 +127,7 @@ svg {
     "navigation"
     "main";
 }
-#social-image svg {
-    width: 24px;
-    height: auto;
-}
+
 .header {
     grid-area: header;
     }
