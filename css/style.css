@@ -21,7 +21,13 @@ img {
 }
 .social-container {
     display: flex;
-    
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+    border: solid 1px #ccc;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .members-container {
@@ -29,10 +35,11 @@ img {
     flex-direction: column;
     align-items: center;
     border-bottom: solid 2px #CCCCCC;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .members-container:last-child {
     border-bottom: none;
+    margin-bottom: 0px;
 }
 .members-text {
     display: flex;
@@ -46,17 +53,79 @@ img {
 .members-text > :last-child {
     margin-top: 0;
 }
+.social-text > :first-child {
+    color: #6366B7;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+}
+.social-text > :last-child {
+    color: #777;
+    font-size: 3em; 
+    margin-top: 0px;  
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: solid 1px #ccc;
+    margin-bottom: 15px;
+    background-color: #F5F5F5;
+}
+
+textarea {
+
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    border: solid 1px #ccc;
+    margin-bottom: 15px;
+    background-color: #F5F5F5;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    background-color: #7477BF;
+    color: white;
+    font-size: 1.25em;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: solid 1px #ccc;
+}
+
+#timezone {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    font-size 1.25em;
+    margin-bottom: 15px;
+    background-color: #F5F5F5;
+    border: solid 1px #ccc;
+
+}
+::placeholder {
+    color: #bcbcbc;
+    font-size: 1.25em;
+    justify-content: center;
+}
+
+select {
+    font-size: 1.25em;
+    color: #8c8c8c;
+
+}
 
 hr {
     border: solid 1px #ccc;
-    margin: 10px -15px;
+    margin: 0px -15px 10px -15px;
 }
 
 #bell {
     filter: invert();
     margin-left: auto;
-    /* border-right: 1px solid black; */
-        
+            
 }
 #avatar-line {
     border-left: 1px solid white;
@@ -78,7 +147,8 @@ header {
     justify-content: space-evenly;
     background-color: #7477BF;
     color: white; 
-    padding: 0px 10px;  
+    padding: 0px 10px;
+      
 }
 .change-color {
     color: invert;
@@ -105,6 +175,28 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     height:auto;
+    padding: 0px 40px;
+}
+
+.recent-activity p,
+.new-members p {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.traffic-nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height:auto;
+}
+/* May not need css below Could be part of chart.js code */
+.traffic-nav-link:hover {
+    background: #81C98F;
+    border-radius: 40px;
+    color: white;
+    padding: 1px 10px;
 }
 
 a:link {
