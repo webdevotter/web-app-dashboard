@@ -131,8 +131,9 @@ hr {
 }
 
 #bell {
-    filter: invert();
+    filter: invert(black);
     margin-left: auto;
+    padding-right: 10px;
             
 }
 #avatar-line {
@@ -297,6 +298,7 @@ svg {
         align-items: center;
         justify-content: space-around;
         height:auto;
+        
     }
     
 }
