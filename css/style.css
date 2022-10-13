@@ -11,10 +11,12 @@ body {
 .alert {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #7477BF;
     color: #fff;
     border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 a:link {
@@ -94,15 +96,26 @@ header {
     padding: 0px 10px;      
 }
 
+header > :last-child {
+    font-size: .6rem
+}
+
 hr {
     border: solid 1px #ccc;
     margin: 0px -15px 10px -15px;
 }
 
-
 img {
     border-radius: 50%;
     height: 80px;
+}
+
+input::placeholder {
+    color: #bcbcbc;
+    font-size: 1.25em;
+    justify-content: center;
+    padding-left: 10px;
+    
 }
 
 input {
@@ -168,12 +181,6 @@ nav {
     padding: 0px 40px;
 }
 
-::placeholder {
-    color: #bcbcbc;
-    font-size: 1.25em;
-    justify-content: center;
-}
-
 .recent-activity p,
 .new-members p {
     font-size: 1.25em;
@@ -191,7 +198,17 @@ select {
 }
 
 .settings-button {
-    display: flex;     
+    display: flex;  
+    justify-content: space-between;   
+}
+
+.settings-button button {
+    max-width: 140px;
+    
+}
+
+.settings-button #cancel {
+    background-color: #8c8c8c;
 }
 
 .social-container {
@@ -247,13 +264,43 @@ svg {
     filter: invert();    
 }
 
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+
+.headline {
+    margin-right: 20px;
+}
+
+.tab {
+    margin-top: 0;
+    background-color: #f5f5f5;
+    width: 90vw;
+    height: 45px;
+    border-left: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
+}
+
 textarea {
     width: 100%;
-    height: 200px;
+    height: 150px;
     border-radius: 8px;
     border: solid 1px #ccc;
     margin-bottom: 15px;
     background-color: #F5F5F5;
+}
+
+textarea::placeholder {
+    font-family: 'Quicksand', sans-serif;
+    color: #bcbcbc;
+    font-size: 1.25em;
+    justify-content: center;
+    padding-left: 10px;
+    padding-top: 5px;
+    
 }
 
 #timezone {
@@ -302,7 +349,7 @@ ul {
     }
 
     .main {
-        padding: 45px;
+        margin-left: 35px;
     }
 
     .traffic, .social {
