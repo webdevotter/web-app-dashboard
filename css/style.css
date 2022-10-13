@@ -4,8 +4,8 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    font-size: .8em;
-    margin: 0px;
+    
+    
 }
 
 .alert {
@@ -102,7 +102,7 @@ header > :last-child {
 
 hr {
     border: solid 1px #ccc;
-    margin: 0px -15px 10px -15px;
+    
 }
 
 img {
