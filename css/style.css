@@ -8,6 +8,15 @@ body {
     margin: 0px;
 }
 
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #7477BF;
+    color: #fff;
+    border-radius: 7px;
+}
+
 a:link {
     color: #7477BF;
     text-decoration: none;
@@ -169,6 +178,11 @@ nav {
 .new-members p {
     font-size: 1.25em;
     text-align: center;
+}
+
+.recent-activity .members-text > :first-child {
+    margin-top: 0;
+    font-size: .85rem;
 }
 
 select {
