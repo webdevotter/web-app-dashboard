@@ -4,11 +4,13 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
+    font-size: .8rem;
     
     
 }
 
 .alert {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,6 +66,7 @@ button {
 /* ///Grid Container Begin/// */
 
 .grid-container {
+    margin: 0;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -141,7 +144,7 @@ li a img {
 }
 
 main {
-    margin: 15px;
+    padding: 15px;
 }
 
 .members-container {
@@ -269,16 +272,20 @@ svg {
     justify-content: space-between;
     margin-top: -15px;
     margin-right: -15px;
+    margin-bottom: 15px;
 }
 
 .headline {
-    margin-right: 20px;
+    margin: auto;
+    padding: 0px;
+    margin-right: 15px;
+    align-self: flex-start;
 }
 
 .tab {
     margin-top: 0;
     background-color: #f5f5f5;
-    width: 90vw;
+    width: 90%;
     height: 45px;
     border-left: 1px solid #bcbcbc;
     border-bottom: 1px solid #bcbcbc;
@@ -319,13 +326,6 @@ textarea::placeholder {
     align-items: center;
     justify-content: space-evenly;
     height:auto;
-}
-/* May not need css below Could be part of chart.js code */
-.traffic-nav-link:hover {
-    background: #81C98F;
-    border-radius: 40px;
-    color: white;
-    padding: 1px 10px;
 }
 
 ul {
@@ -393,6 +393,37 @@ ul {
         width: 45vw;
     }
              
+}
+
+@media (min-width: 1024px) {
+    .social-container {
+        max-width: 33%;
+        justify-items: space-around;
+    }
+
+    #members {
+        display: flex;
+        
+         
+        
+    }
+
+    .members-container, .members-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: 100%;
+       
+    }
+
+    #messaging {
+        display: flex;
+        
+    }
+
+    .message {
+        max-width: 100%;
+    }
 }
 
 
