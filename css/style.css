@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300");
+
 * {
     box-sizing: border-box;
 }
@@ -73,6 +75,8 @@ button {
     grid-template-areas:
     "header"
     "navigation"
+    "dashboard"
+    "alert"
     "main";
 }
 
@@ -82,7 +86,15 @@ button {
 
 .navigation {
     grid-area: navigation;
-    }
+}
+
+.dashboard {
+    grid-area: dashboard;
+}
+
+.alert {
+    grid-area: alert;
+}
 
 .main {
     grid-area: main;
@@ -336,6 +348,53 @@ ul {
 .widget-container-full, .widget-container-half {
     width: 95vw;
 }
+
+/* CSS-Only Toggle */
+
+.toggle-button {
+    -webkit-appearance: none;
+    position: relative;
+    width: 90px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    background-color: #C0C0C0;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.toggle-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 1.75rem;
+    width: 1.75rem;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    transition: left .3s;
+}
+
+.toggle-button:checked {
+    background-color: #7477BF;
+}
+
+.toggle-button:checked::after {
+    
+    left: 75%;
+}
+
+.toggle {
+    display: flex;
+    align-content: center;
+    justify-content: space-between ;
+
+}
+
+
+
 
 /* ///Media Queries/// */
 

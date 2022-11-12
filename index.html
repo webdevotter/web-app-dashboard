@@ -229,15 +229,24 @@
             <!-- local settings widget -->
             <section class="settings">
                 <h3>SETTINGS</h3>
-
+                <div class="toggle" id="email-toggle">
+                    <p>Send Email Notifications</p>
+                    <input type="checkbox" class="toggle-button">
+                </div>
                 <!-- custom CSS toggle code-->
-
+                <div class="toggle" id="profile-toggle">
+                    <p>Set Profile to Public</p>
+                    <input type="checkbox" class="toggle-button">
+                </div>
                 <!-- custom CSS toggle code-->
 
                 <select class="form-field" id="timezone">
                     <option disabled selected>Select a Timezone</option>
                     <option>Eastern</option>
                     <!-- more options -->
+                    <option>Central</option>
+                    <option>Western</option>
+                    <option>Pacific</option>
                 </select>
                 <div class="settings-button" >
                     <button class="button-primary" id="save">SAVE</button>
