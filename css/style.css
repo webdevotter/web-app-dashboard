@@ -65,6 +65,10 @@ button {
     border-radius: 0px;
 }
 
+.daily {
+    border-bottom: 2px solid #ccc;
+}
+
 /* ///Grid Container Begin/// */
 
 .grid-container {
@@ -376,6 +380,7 @@ ul {
     border: 2px solid #ccc;
     transition: left .3s;
 }
+
 
 .toggle-button:checked {
     background-color: #7477BF;
