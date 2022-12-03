@@ -159,8 +159,19 @@ li a img {
     text-decoration: none;
 }
 
-main {
+/* main {
     padding: 15px;
+} */
+
+#main {
+    padding: 15px;
+}
+
+.daily h3,
+.new-members h3,
+.recent-activity h3,
+#messaging h3 {
+    padding-left: 15px;
 }
 
 .members-container {
@@ -168,12 +179,12 @@ main {
     flex-direction: column;
     align-items: center;
     border-bottom: solid 2px #CCCCCC;
-    margin-bottom: 20px;
+    
 }
 
 .members-container:last-child {
     border-bottom: none;
-    margin-bottom: 0px;
+    
 }
 
 .members-text {
@@ -198,6 +209,21 @@ nav {
     justify-content: space-evenly;
     height:auto;
     padding: 0px 40px;
+}
+
+#members .new-members,
+#members .recent-activity,
+#messaging .message {
+    border-bottom: 2px solid #bcbcbc;
+}
+
+#messaging .message form,
+#messaging .settings {
+    padding: 15px;
+}
+
+div.members-container {
+    margin: 0 15px 15px;
 }
 
 .recent-activity p,
@@ -237,9 +263,10 @@ select {
     border: solid 1px #ccc;
     background-color: #f5f5f5;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin: 0 15px 15px 15px;
     height: 100px;
     max-width: 400px;
+    
 }
 
 .social-image {
@@ -251,12 +278,21 @@ select {
     height: 60px;
     width: 60px;
     margin-right: 25px;
-    margin-left: 15px;    
+    margin-left: 15px; 
+    
 }
 
 #social-image svg {
     width: 24px;
     height: auto;
+}
+
+#social-stats {
+    border-bottom: 2px solid #ccc;;
+}
+
+#social-stats h3 {
+    padding-left: 15px;
 }
 
 .social-text > :first-child {
@@ -344,14 +380,10 @@ textarea::placeholder {
     height:auto;
 }
 
-ul {
-    margin: 0;
-    padding: 0;  
-  }
 
-.widget-container-full, .widget-container-half {
-    width: 95vw;
-}
+
+
+
 
 /* CSS-Only Toggle */
 
@@ -396,6 +428,12 @@ ul {
     align-content: center;
     justify-content: space-between ;
 
+}
+
+#mobile-users {  
+    padding-left: -15px;
+    padding-right: -15px; 
+    border-bottom: solid 2px #ccc;
 }
 
 
@@ -489,6 +527,7 @@ ul {
         max-width: 100%;
     }
 }
+
 
 
 
