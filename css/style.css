@@ -57,6 +57,8 @@ button {
     border: solid 1px #ccc;
 }
 
+
+
 .change-color {
     color: invert;
     filter: invert();
@@ -155,7 +157,7 @@ li a img {
     text-decoration: none;
 }
 
-
+/* Alert */
 #main {
     padding: 15px;
 }
@@ -240,10 +242,12 @@ select {
     justify-content: space-between;   
 }
 
-.settings-button button {
-    max-width: 100;
-    
+.settings-button #save,
+.settings-button #cancel {
+    width: 49%;
 }
+
+
 
 .settings-button #cancel {
     background-color: #8c8c8c;
@@ -282,7 +286,6 @@ select {
 
 #social-stats {
     border-bottom: 2px solid #ccc;
-    max-width: 100%;
 }
 
 #social-h3 {
@@ -453,16 +456,35 @@ textarea::placeholder {
         padding: auto;                
     }
 
-   #social-stats {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-    
   
 
+  
+    
+    img.profile-image {
+        margin: 15px;
+    }
+
+    div.members-container {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .members-text {
+        align-items: flex-start;
+    }
+
+   .toggle {
+        max-width: 50%;
+    }
+
 }
+
+@media (min-width: 1024) {
+
+
+}
+
 
 
 
