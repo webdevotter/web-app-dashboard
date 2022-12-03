@@ -119,10 +119,6 @@ header > :last-child {
     font-size: .6rem
 }
 
-hr {
-    border: solid 1px #ccc;
-    
-}
 
 img {
     border-radius: 50%;
@@ -159,9 +155,6 @@ li a img {
     text-decoration: none;
 }
 
-/* main {
-    padding: 15px;
-} */
 
 #main {
     padding: 15px;
@@ -170,7 +163,7 @@ li a img {
 .daily h3,
 .new-members h3,
 .recent-activity h3,
-#messaging h3 {
+.message > h3 {
     padding-left: 15px;
 }
 
@@ -248,7 +241,7 @@ select {
 }
 
 .settings-button button {
-    max-width: 140px;
+    max-width: 100;
     
 }
 
@@ -258,14 +251,14 @@ select {
 
 .social-container {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
     border: solid 1px #ccc;
     background-color: #f5f5f5;
     border-radius: 8px;
-    margin: 0 15px 15px 15px;
+    margin: 15px;
     height: 100px;
-    max-width: 400px;
+    max-width: 100%;
     
 }
 
@@ -288,10 +281,11 @@ select {
 }
 
 #social-stats {
-    border-bottom: 2px solid #ccc;;
+    border-bottom: 2px solid #ccc;
+    max-width: 100%;
 }
 
-#social-stats h3 {
+#social-h3 {
     padding-left: 15px;
 }
 
@@ -431,9 +425,7 @@ textarea::placeholder {
 }
 
 #mobile-users {  
-    padding-left: -15px;
-    padding-right: -15px; 
-    border-bottom: solid 2px #ccc;
+     border-bottom: solid 2px #ccc;
 }
 
 
@@ -443,31 +435,15 @@ textarea::placeholder {
 
 @media (min-width: 768px) {
 
+
     .grid-container {
         grid-template-columns: 55px 1fr;
         grid-template-areas:
         "header header"
         "navigation main";
     }
-
-    .main {
-        margin-left: 35px;
-    }
-
-    .traffic, .social {
-        grid-column: 1 / span 2;
-    }
-
-    .daily, .members, .message {
-        grid-column: 1 / span 1;
-    }
-
-    .mobile, .activity, .settings {
-        grid-column: 2 / span 1;
-    }   
-
+    
     nav {
-        background-color: #4D4C72;
         display: flex;
         flex-wrap: wrap;
         align-content:flex-start;
@@ -477,56 +453,18 @@ textarea::placeholder {
         padding: auto;                
     }
 
-    #social-stats  {
-        display: flex;  
-    }
-
-    .social-container {
-        flex: 1;
-        justify-items: space-between;
-        margin: auto;    
-    }
-
-    .widget-container-full {
-        width: 90vw;
-    }
-
-    .widget-container-half {
-        width: 45vw;
-    }
-             
+   #social-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-@media (min-width: 1024px) {
-    .social-container {
-        max-width: 33%;
-        justify-items: space-around;
-    }
+    
+  
 
-    #members {
-        display: flex;
-        
-         
-        
-    }
-
-    .members-container, .members-text {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        max-width: 100%;
-       
-    }
-
-    #messaging {
-        display: flex;
-        
-    }
-
-    .message {
-        max-width: 100%;
-    }
 }
+
+
 
 
 
